@@ -99,7 +99,7 @@ a:active {
 }
 
 #projectList {
-    border: none;
+    outline: none;
 }
 
 .project {
