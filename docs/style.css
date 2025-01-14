@@ -102,6 +102,10 @@ a:active {
     outline: none;
 }
 
+#projectList:focus {
+    outline: none;
+}
+
 .project {
     width: 942px;
     display: flex;
