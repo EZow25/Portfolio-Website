@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMO Dashboard</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo" id="Logo">
+        <span id="Links">
+            <a href="/">Home</a>
+            <a href="/#projectList">Projects</a>
+            <a href="assets/Evan Zhao Resume MS.pdf" target="_blank">Resume</a>
+        </span>
+    </header>
+    <div class="caseStudyContent">
+        <h1>ECMO Dashboard</h1>
+        <div class="basicInfo">
+            <div class="summary">
+                <h2>Summary</h2>
+                <p>
+                    This project (“Patient Care Technologies for Permanent Ambulatory Artificial Lung Support”, Lead PI: Keith Cook) 
+                    was supported by the <span class="orgName">US Army/Congressionally Directed Medical Research Programs</span>. It involved the development of a 
+                    medical device that could gather biometric data from patients. This data would be displayed 
+                    in a dashboard for medical professionals to use, which was my focus for the project.
+                </p>
+            </div>
+            <div class="responsibilities">
+                <h2>Responsibilities</h2>
+                <p>
+                    UX Design<br>
+                    Web Development<br>
+                    Data Visualization<br>
+                    Database Management
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Summer 2024</h2>
+            <p>
+                I joined the front-end team of the project in early June 2024. We were tasked with designing and developing the dashboard application. 
+                We went with the <span class="tool">Next.js</span> framework to develop the application, which involved a mix of 
+                <span class="tool">React</span>, <span class="tool">Typescript</span>, and <span class="tool">Tailwind</span>. 
+                For our data visuals, we liked how much functionality could be built into graphs with the <span class="tool">D3</span> library. 
+                Lastly, we went with <span class="tool">Figma</span> to create mock-ups.
+            </p>
+            <div class="inlineImgs">
+                <a href="https://nextjs.org/"><img src="assets/ecmo_images/Next.png" alt="Next.js" /></a>
+                <a href="https://d3js.org/"><img src="assets/ecmo_images/D3.png" alt="D3" /></a>
+                <a href="https://www.figma.com/"><img src="assets/ecmo_images/Figma.png" alt="Figma" /></a>
+            </div>
+            <p>
+                With my interest in graphic design and experience in web development, I designed mocks-up that gave the team a visual representation 
+                of the application before we went into coding. This allowed for early feedback on artistic direction and planning on how we would split up 
+                the code among the team.  
+            </p>
+            <img src="assets/ecmo_images/dashboard_design.png" alt="design" class="sectionImg" />
+            <p>
+                I opted for a clean, minimalist structure and artistic direction after researching existing examples of similar medical applications and 
+                modern design trends used in successful apps like Instagram. This left room to add necessary details to the graphs, like buttons for navigation or alert icons.
+
+                <br>
+                <br>
+                By the end of the fall, we had the data viz page coded up and an initial draft of a graph. 
+            </p>
+        </div>
+        <div class="section">
+            <h2>Fall 2024</h2>
+            <p>
+                Moving into the fall, I refactored the graphs to be more Next.js compatible and implemented them into the webpage. After working with someone 
+                managing the data in AWS S3, our graphs successfully displayed a sample of real experimental data in the dashboard page. From there, add some zooming to the graphs, 
+                host with Vercel, and <a href="https://ecmo.vercel.app/dashboard"><strong>voil&#224;</strong></a>! (double left click to zoom out)
+            </p>
+            <video controls>
+                <source src="assets/ecmo_images/dashboard_vid.mp4" type="video/mp4">
+            </video>
+            <p>
+                This application will be crucial for users of the medical device. I'm sure that its simplistic design and functionality will ensure medical professionals 
+                can easily explore data they need to make decisions that best address the needs of their patients.  
+            </p>
+        </div>
+    </div>
+    
+</body>
+
+</html>

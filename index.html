@@ -1,15 +1,77 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evan Zhao</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
     <header>
-        <p>About Me</p>
-        <p>Experience</p>
-        <p>Contact</p>
-        <a href="assets/Evan_Zhao_Resume.docx.pdf">Resume</a>
+        <img src="assets/Logo.png" alt="Logo" id="Logo">
+        <span id="Links">
+            <a href="/">Home</a>
+            <a href="/#projectList">Projects</a>
+            <a href="assets/Evan Zhao Resume MS.pdf" target="_blank">Resume</a>
+        </span>
     </header>
-    <body id="app">
+    <div id="Cover">
+        <div id="Text">
+            <div id="Title">Evan Zhao</div>
+            <div id="Intro">
+                Hi, I'm Evan! I'm currently an undergraduate at <span class="orgName">UMDCP</span> 
+                studying Computer Science with extensive research experience at 
+                <span class="orgName">Carnegie Mellon University Biorobotics</span>. 
+                I enjoy blending my artistic and technological passions through impactful projects.</div>
+        </div>
+        <img id="CoverImg" src="assets/CoverImage.png" alt="Cover Image">
+    </div>
 
-    </body>
-    <footer>
+    <a href="ecmo.html" class="project" id="projectList">
+       <div>
+            <p class="projectTitle ">ECMO Dashboard</p>
+            <hr class="projectHr">
+            <p class="projectOrg">Carnegie Mellon University Biorobotics</p>
+            <p class="projectYear">2024-Present (WIP)</p>
+        </div>
+        <img class="projectImg" src="assets/ECMO.png" alt="ECMO Dashboard">
+    </a>
 
-    </footer>
+    <a href="/viz.html" class="project">
+        <div>
+             <p class="projectTitle">Pipe Visualization</p>
+             <hr class="projectHr">
+             <p class="projectOrg">Carnegie Mellon University Biorobotics</p>
+             <p class="projectYear">2023</p>
+         </div>
+         <img class="projectImg" src="assets/Viz.png" alt="Viz">
+    </a>
+    
+    <a href="/buzz.html" class="project">
+        <div>
+            <p class="projectTitle">BuzzFCA: FCVlogs</p>
+            <hr class="projectHr">
+            <p class="projectOrg">Filipino Cultural Association at UMDCP</p>
+            <p class="projectYear">2024-2025</p>
+        </div>
+        <img class="projectImg" src="assets/BuzzLogo.png" alt="BuzzFCA Logo">
+        
+    </a>
+
+    <a href="/hobbies.html" class="project">
+        <div>
+            <p class="projectTitle">Hobbies</p>
+            <hr class="projectHr">
+            <p class="projectOrg">Personal</p>
+        </div>
+        <img class="projectImg" src="assets/HobbiesCover.png" alt="Hobbies">
+        
+    </a>
+</body>
 
 </html>

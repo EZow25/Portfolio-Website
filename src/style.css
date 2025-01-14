@@ -1,0 +1,247 @@
+html {
+    background-color: black;
+    font-family: 'Open Sans';
+    color: white;
+}
+
+header {
+    padding-top: 20px;
+    position: relative;
+}
+
+#Logo {
+    height: 80px;
+    margin-left: 150px;
+}
+
+#Links {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    font-size: 18px;
+    display: flex;
+    gap: 60px;
+    font-family: 'Montserrat';
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: lightgray;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+#Cover {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+#Text {
+    font-weight: bold;
+    font-size: 150px;
+    margin-right: -300px;
+    margin-top: 230px;
+    z-index: 3;
+}
+
+#Title {
+    margin-left: -10px;
+}
+
+#Intro {
+    z-index: 3;
+    color: lightgray;
+    font-size: 14px;
+    font-weight: lighter;
+    width: 650px;
+    line-height: 25px;
+    margin-top: -10px;
+}
+
+.orgName {
+    color: #9ac8ff;
+}
+
+.tool {
+    color: #fff089;
+}
+
+#CoverImg {
+    z-index: 2;
+    margin-left: 0px;
+    height: 720px;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#projectList {
+    border: none;
+}
+
+.project {
+    width: 942px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    color: #fff089;
+    transform:scale(0.96); 
+}
+
+.projectTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 112px;
+    width: 300px;
+}
+
+.projectHr {
+    color: white;
+    justify-self: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 30px;
+}
+
+.projectOrg {
+    margin-top: 0px;
+    margin-bottom: 10px;;
+    font-weight: bold;
+    color: white;
+}
+
+.projectYear {
+    margin-top: 0px;
+    font-weight: lighter;
+    color: white;
+}
+
+.projectImg {
+    width: 537.7px;
+}
+
+.caseStudyContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat'
+}
+
+.caseStudyContent {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.basicInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.summary {
+    width: 700px;
+}
+
+.responsibilities {
+    width: 400px;
+    margin-left: 170px;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Montserrat'
+}
+
+p {
+    font-size: 14px;
+}
+
+.section {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inlineImgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionImg {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+strong:hover {
+    color: rgb(88, 119, 130);
+}
+
+#ytvid {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgHoriz {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 800px;
+}
+
+.imgVert {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 550px;
+}

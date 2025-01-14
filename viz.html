@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipeSnake Viz</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo" id="Logo">
+        <span id="Links">
+            <a href="/">Home</a>
+            <a href="/#projectList">Projects</a>
+            <a href="assets/Evan Zhao Resume MS.pdf" target="_blank">Resume</a>
+        </span>
+    </header>
+    <div class="caseStudyContent">
+        <h1>PipeSnake Viz</h1>
+        <div class="basicInfo">
+            <div class="summary">
+                <h2>Summary</h2>
+                <p>
+                    This project ("Confined Space Mapping Module for In-Pipe Repair Robots (DE-AR0001331), PL's: Howie Choset, Lu Li")was 
+                    funded by the <span class="orgName">U.S. Department of Energy (DOE) Advanced Research Projects Agency - Energy (ARPA-E) REPAIR Program</span>. 
+                    It aimed to address dangerous pipe explosions by creating a robot that could traverse the inside of pipes while 
+                    inspecting them and repairing any damages.
+                </p>
+            </div>
+            <div class="responsibilities">
+                <h2>Responsibilities</h2>
+                <p>
+                    Software Development<br>
+                    Computer Graphics<br>
+                    3D Mathematics
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Picking the Tools</h2>
+            <p>
+                This was one of the first project teams I joined as a research intern at CMU in the summer of 2023. On top of helping build a 
+                pipe-traversing robot, I was tasked with developing a 3D visualization of the robot traversing pipe environments. I decided to 
+                code the project in <span class="tool">Python</span> since I had done similar work with the language before. I made use of the 3D mathematics and plotting 
+                libraries <span class="tool">NumPy</span> and <span class="tool">Matplotlib</span> to calculate and display the individual points that would make up my 3D models. I also used an Object 
+                Oriented Programming approach to structure my code.
+            </p>
+            <div class="inlineImgs">
+                <a href="https://www.python.org/"><img src="assets/viz_images/python.png" alt="Python" /></a>
+                <a href="https://numpy.org/"><img src="assets/viz_images/numpy.png" alt="NumPy" /></a>
+                <a href="https://matplotlib.org/"><img src="assets/viz_images/matplotlib.png" alt="Matplotlib" /></a>
+            </div>
+        </div>
+        <div class="section">
+            <h2>The First Draft</h2>
+            <p>
+                My first task was to create the model of the robot. I based its dimensions off actual measurements of the robot, then used some basic algebra and trigonometry to calculate the points I needed. 
+                The code for this was placed in a class titled Robot. 
+            </p>
+            <img src="assets/viz_images/pipesnake.png" alt="PipeSnake" class="sectionImg" />
+            <p>
+                I then moved into building the pipes I wanted it to be customizable, as the viz would ideally be used in a variety of different pipe environments. Thus, I broke the implementation into 2 
+                basic functions: one for modeling straight pipes, and one for turns. Users would call these functions of the Pipe class to create a model of their pipes. For the first draft, I managed to 
+                build the pipe along the x, y, and z axes in the positive and negative directions.<br>
+                <br>
+                For example, say a user created a pipe that started going in the positive y direction, but then turned to the negative x (the robot marks the start of the pipe). The model would look something like this.
+            </p>
+            <img src="assets/viz_images/turn1.png" alt="Turn 1" class="sectionImg" />
+            <p>
+                This wasn't bad for the first attempt, but it could be better. After a code review and discussions with my supervisor, senior members of the lab, and peers, I moved on to the next iteration.
+            </p>
+        </div>
+        <div class="section">
+            <h2>The Final Product</h2>
+            <p>
+                For this next draft, I wanted to give the code functionality for modeling pipes going in diagonal directions, not just directions along a single axis. I also wanted to model wider and tighter turns of 
+                different angles for increased customizability. All in all, I had to redo my approaches, especially when it came to modeling turns.<br>
+                <br>
+
+                To accomplish this, I needed to lean way more into mathematics. I built on my previous coursework in linear algebra fundamentals with further research into its computer graphics applications, then put 
+                some serious thought into how to use my newfound knowledge to calculate the points I would need. I also reached out to one of the best programmers in the lab who had given a lot of good advice during my 
+                aforementioned code review. After months of work, I managed to accomplish adding all these new features, on top of nearly halving the length of my original code. 
+            </p>
+            <img src="assets/viz_images/turn2.png" alt="Turn 1" class="sectionImg" />
+            <div class="inlineImgs">
+                <img src="assets/viz_images/0.5turn.png" alt="Tight Turn" class="sectionImg" />
+                <img src="assets/viz_images/1turn.png" alt="Wide Turn" class="sectionImg" />
+            </div>
+            <p>
+                By the end of the summer, the code could practically model a much wider range of pipe configurations involving just turns and straight sections. I was very happy with what I had accomplished, and after 
+                showing my supervisor, he said the pipe modeling code would be used to generate 3D maps of pipes while the robot traversed them.<br>
+                <br>
+                Feel free to check out the GitHub repository <a href="https://github.com/EZow25/CMU-Biorobotics/tree/main/PipeSnake/PipeSnakeSim3D"><strong>here</strong></a>!
+            </p>
+            <img src="assets/viz_images/vizfinal.png" alt="Viz Final" class="sectionImg" />
+        </div>
+    </div>
+    
+</body>
+
+</html>
