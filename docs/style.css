@@ -155,6 +155,22 @@ a:active {
     width: 537.7px;
 }
 
+.projectLinks {
+    margin-top: 0px;
+}
+
+.linkImg {
+    width: 30px;
+}
+
+.linkImg:hover {
+    transform:scale(0.90);
+}
+
+.inTextLinkImg {
+    width: 14px;
+}
+
 .caseStudyContent {
     display: flex;
     justify-content: center;
