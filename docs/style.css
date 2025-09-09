@@ -160,7 +160,7 @@ a:active {
 }
 
 .linkImg {
-    width: 30px;
+    height: 30px;
 }
 
 .linkImg:hover {
@@ -239,6 +239,13 @@ p {
     margin-bottom: 20px;
 }
 
+.sectionImgLg {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 strong {
     text-decoration: underline;
 }
@@ -265,4 +272,9 @@ strong:hover {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 550px;
+}
+
+li {
+    font-size: 14px;
+    line-height: 28px;;
 }
