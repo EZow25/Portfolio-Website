@@ -157,6 +157,7 @@ a:active {
 
 .projectLinks {
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .linkImg {
@@ -186,8 +187,8 @@ h1 {
 }
 
 .caseStudyContent {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .basicInfo {
@@ -227,7 +228,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
+    gap: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
