@@ -64,7 +64,7 @@ a:active {
 #Intro {
     z-index: 3;
     color: lightgray;
-    font-size: 14px;
+    font-size: 15.75px;
     font-weight: lighter;
     width: 650px;
     line-height: 25px;
@@ -100,6 +100,7 @@ a:active {
 
 #projectList {
     outline: none;
+    /* padding-top: 30px; */
 }
 
 #projectList:focus {
