@@ -114,10 +114,10 @@ a:active {
     margin: auto;
     margin-bottom: 50px;
     transition: all 0.3s ease;
+    align-items: stretch;
 }
 
 .project:hover {
-    color: #fff089;
     transform:scale(0.96); 
 }
 
@@ -150,6 +150,21 @@ a:active {
     margin-top: 0px;
     font-weight: lighter;
     color: white;
+}
+
+.project > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectDescription {
+    width: 90%;
+    color: rgb(201, 201, 201);
+}
+
+.projectSkills {
+    font-size: 14px;
+    color: lightblue;
 }
 
 .projectImg {
