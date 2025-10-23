@@ -171,6 +171,10 @@ a:active {
     width: 537.7px;
 }
 
+.projectImgCover {
+    width: 100%;
+}
+
 .projectLinks {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -192,13 +196,14 @@ a:active {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 0px;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Montserrat'
 }
 
@@ -228,13 +233,19 @@ h2 {
     font-family: 'Montserrat'
 }
 
+h3 {
+    font-size:  20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 p {
     font-size: 14px;
     line-height: 28px;
 }
 
 .section {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -259,6 +270,13 @@ p {
 .sectionImgLg {
     width: 1200px;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionGraphic {
+    align-self: center;
+    width: 1350px;
     margin-top: 20px;
     margin-bottom: 20px;
 }

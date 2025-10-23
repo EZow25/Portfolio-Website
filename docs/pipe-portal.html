@@ -22,6 +22,10 @@
         </span>
     </header>
     <div class="caseStudyContent">
+        <div class="section">
+            <img src="assets/pipe_portal/datapage.png"  alt="Pipe Portal" class="sectionImgCover"/>
+            <br>
+        </div>
         <h1>Pipe Portal Redesign</h1>
         <div class="projectLinks">
             <a href="https://www.figma.com/proto/9209EWQSaATMUv5Yxg12IT/Pipe-Portal?node-id=0-1&t=FAwuU0r4cp3k1BEB-1" target="_blank"><img src="assets/figmaicon.png" alt="Figma Link" class="linkImg" /></a>
@@ -31,10 +35,7 @@
             <div class="summary">
                 <h2>Summary</h2>
                 <p>
-                    This project aimed to <b>prevent dangerous pipe explosions</b> by creating a robot that could traverse the inside of pipes while 
-                    inspecting them and repairing any damages. To <b>view, annotate, and export the inspection data</b>, business professionals (asset owners, civil engineers,
-                    inspectors, etc.) would use a web application called the Pipe Portal. My task was to redesign and rebuild the Portal to improve
-                    its usability and overall visual appeal.
+                    Redesigned the Pipe Portal for business professionals to better inspect pipe inspection data and identify damages.
                 </p>
             </div>
             <div class="responsibilities">
@@ -49,120 +50,93 @@
             </div>
         </div>
         <div class="section">
-            <h2>Teardown of Existing Portal</h2>
-            <p>
-                I first met with the lead of the project to learn more about the portal's current state and its functionality.
-                She walked me through the portal's main features, including an interactable 2D map showing the locations
-                of pipe systems, annotation features to mark defects the robots found in the pipes, and a tab to view data about the pipes, 
-                robots, and inspection data the robots had gathered while performing jobs. 
-            </p>
-            <img src="assets/pipe_portal/portalv1-site.png" alt="Pipe Portal v1" class="sectionImg"/>
-            <p>
-                Afterwards, I conducted my own thorough analysis of the portal to identify any UX issues and brainstorm potential solutions. The identified
-                areas of improvement included:<br>
-                <ol>
-                    <li><b>Clarity</b> for a wide demographic of business professionals.</li>
-                    <li><b>Visual Hierarchy</b> so users can seamlessly and logically break down each page with minimal mental load.</li>
-                    <li><b>Feedback</b> so users are informed of the system's response to an interaction.</li>
-                    <li><b>Consistency</b> in design and behavior for similar components. </li>
-                    <li><b>Affordances</b> so users can understand a component's usage just by looking at it. </li>   
-                </ol>
-            </p>
-            <p>
-                Something I would have done differently before the ideation phase is begin discovering how to empathize with users. 
-                I could've interviewed users of the applications, or even observed them performing tasks on the portal 
-                or other existing pipe portals used by business professionals.
-                A first-hand account of their pain points and needs when using the portal would've been invaluable
-                when making design decisions.
-                Unfortunately, the only person I could discuss the portal with was my project lead, who was not a user nor a designer. Nevertheless, having
-                a second set of eyes to bounce ideas off of helped immensely, and got me experience communicating design ideas to non-designers.
-
+            <h2>Problem</h2>
+            <h3>Existing pipe systems are built to last a century. <em>Those same pipes were built a century ago.</em></h3>
+            <h3></h3>
+        </div>
+        <br>
+        <br>
+        <div class="section">
+            <h2>Project</h2>
+            <p>Engineers in the lab worked on building a robot for businesses to inspect the insides of their pipes.
+                Data from the robot needs to be clearly presented to business professionals, who want to view the pipe data and annotate damaged sections.
+                <h3>But the user interface lacks usability and aesthetic appeal compared to its competitors.</h3> <br>
             </p>
         </div>
+        <img src="assets/pipe_portal/portalv1-site.png" alt="Pipe Portal V1" />
+        <br>
+        <br>
+        <br>
+        <div class="section">
+            <h2>Impact</h2>
+            <p>
+                I worked closely with my project manager to <b>fully redesign the UI</b>, bearing in mind key usability principles (consistency, visual hierarchy, etc.)
+                and minimal, modern design trends.<br>
+                I also <b>advocated for, organized, and conducted a heuristic-based usability test</b> to identify any pain points and
+                further refine the prototype before I began development.
+            </p>
+        </div>
+        <br>
+        
+        <div class="section">
+            <h2>Research</h2>
+            <p>
+                From analyzing the existing portal design and speaking with previous users, I identified <b>5 areas of improvements</b>.
+            </p>
+            <img src="assets/pipe_portal/aoi.png" alt="Areas of Improvement" class="sectionGraphic"/>
+        </div>
+        <br>
+
         <div class="section">
             <h2>Ideation</h2>
             <p>
-                Now that I had a solid understanding of the portal and what to focus on for the redesign, I felt confident enough to
-                begin brainstorming ideas. For inspiration, I turned to <a href="https://dribbble.com/"><strong>Dribbble</strong><img src="assets/linkicon.png" class="inTextLinkImg" /></a>. 
+                Now that I had a solid understanding of the portal and what to focus on for the redesign, 
+                I moved into brainstorming, rapidly sketching, and conducting several competitive and comparative analyses using Dribbble.
             </p>
-            <img src="assets/pipe_portal/shippomap.jpg" alt="Shippo Map UI" class="sectionImg"/>
-             <div class="inlineImgs">
-                <img src="assets/pipe_portal/ridesharemap.jpg" alt="Rideshare App Map UI" class="sectionImg" />
-                <img src="assets/pipe_portal/floodmap.png" alt="Flood Map UI" class="sectionImg" />
+            <div class="inlineImgs">
+                <img src="assets/pipe_portal/shippomap.jpg" alt="Shippo" class="sectionImg" />
+                <img src="assets/pipe_portal/mapsketch.jpg" alt="Flood" class="sectionImg" />
             </div>
-            <p>
-                From there, sketches helped quickly visualize ideas for the 
-                structure of individual pages and the overall flow architecture.
-            </p>
-            <img src="assets/pipe_portal/mapsketch.jpg" alt="Map Sketch" class="sectionImg"/>
-            <p>
-                Again, user input would've really benefitted me at this point. Getting their insights on my sketches and ideas would've been invaluable for the next step.
-            </p>
         </div>
+        <br>
 
         <div class="section">
-            <h2> Prototyping & Usability Testing </h2>
-            <p> With the sketches finalized, I had some solid structures and a low fidelity mock-up. The next step was to start nailing down the 
-                aesthetics and create something higher fidelity in <span class="tool">Figma</span>.
-                This ended up being a long cycle of discussing design decisions with my project lead, then iterating, and then refining.
-            </p>
+            <h2>Prototyping</h2>
             <p>
-                At the point when I felt the design was solid enough, I pushed for some user testing before moving on to development.
-                I proposed a form of heuristic evaluation, where I would present the prototype to a group of participants and have them perform tasks. At the same time, they would
-                make note of how strongly the prototype met a heuristic, ranking how strongly the heuristic was met from 1=not met to 5=strongly met. When everyone was done,
-                we would convene to discuss how they ranked each heuristic, what issues they faced, and what suggestions they had for improvement.
-                This method would allow me to get feedback from a group of users quickly, and help users have metrics to evaluate the design more concretely.
-                As for the heuristics, I based them off Nielsen's 10 Usability Heuristics for User Interface Design, but modified or removed some to better
-                fit the portal. For example, I removed "Help and Documentation" since I had not designed any related features into this iteration of the prototype.
-                You can view the full set of heuristics in the handout I prepared for participants <a href="assets/pipe_portal/evalhandout.pdf" target="_blank"><strong>here</strong><img src="assets/linkicon.png" class="inTextLinkImg" /></a>.
-            </p>
-            <p>
-                I ended up recruiting 6 people from the lab. My project lead sat in the session to observe. Unfortunately, only 1 of the particpants had used the portal before, 
-                and the business professionals who were invited did not end up attending. Nevertheless, we got some strong insights. Notably, we realized that the map wasn't actually
-                as important as we thought. It turns out that our users would likely fall into 2 categories: those who wanted to inspect and annotate data in jobs, and those
-                who just wanted a report of the inspection data to export and share. Thus, the main feature of the portal would be inspecting job data, annotating them,
-                and exporting them.
-                To resolve this, I restructured the flow architecture so that the first page in the prototype would be the page with the table of jobs, rather than the map.
-                It also required some major structural changes to the design of the job data, and some thought into the new role the map would play.
-                We came to realize that it was more of a secondary feature for users to visualize where pipes, robots, observations, and jobs were located. 
-            </p>
-            <p>
-                After making the changes, I felt confident enough in the prototype to move on to development. Check it out <a href="https://www.figma.com/proto/9209EWQSaATMUv5Yxg12IT/Pipe-Portal?node-id=0-1&t=FAwuU0r4cp3k1BEB-1"><strong>here</strong><img src="assets/linkicon.png" class="inTextLinkImg" /></a>!
+                With the sketches finalized, I had some solid structures and a low fidelity mock-up. 
+                The next step was to start nailing down the aesthetics and create something higher fidelity in Figma.
             </p>
             <div class="inlineImgs">
-                <img src="assets/pipe_portal/datapage.png" alt="" class="sectionImg" />
-                <img src="assets/pipe_portal/annotationmap.png" alt="Figma Prototype" class="sectionImg"/>
-            </div>
-            <div class="inlineImgs">
-                <img src="assets/pipe_portal/annotationgallery.png" alt="" class="sectionImg" />
-                <img src="assets/pipe_portal/robot.png" alt="Figma Prototype" class="sectionImg"/>
+                <img src="assets/pipe_portal/annotationmap.png" alt="Portal Map" class="sectionImg" />
+                <img src="assets/pipe_portal/annotationgallery.png" alt="Portal Map" class="sectionImg" />
             </div>
         </div>
+        <br>
+
+        <div class="section">
+            <h2>Usability Testing</h2>
+            <p>
+                We conducted a heuristic-based usability test with 6 lab members to measure the design's usability.
+                Participants were asked to rank the design across 7 different heuristics, similar to the 5 areas of improvement. <br>
+                Notably, we discovered a major flaw in the user flow. Participants felt the landing page shouldn't be the map, <b>it should be the page
+                that shows all the jobs</b> since jobs held all the important data users would inspect and annotate. 
+            </p>
+        </div>
+        <br>
+
         <div class="section">
             <h2>Development</h2>
             <p>
-                Using the prototype, I began development. With limited time left, I focused on coding the most complex and important part: the job data page.
-                I turned to <span class="tool">Next.js</span> for the framework due to its ease of use, built-in routing, and my past experience with it.
-                By the end of the summer, I had a functional version of the job data page for displaying simulated data. Check it out in the video below!
+                After making the changes from the usability test and with limited time left, I began developing the data display page.
+                I used the Next.js framework for its ease of use, built-in routing, and my extensive experience using it.
             </p>
+            <h3>Check it out!</h3>
+            <br>
             <video controls>
                 <source src="assets/pipe_portal/portal.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="section">
-        <h2>Conclusion</h2>
-        <p>
-            Over the summer, I got hands-on trying out my first design process in the real world. From research, to ideation, to prototyping, to usability testing, and 
-            finally development, I've begun to really see what it takes to design a strong user experience. At the same time, I learned how important user input is.
-            At nearly every phase, it would've expedited the process and made the final product more suitable for users.   
-        </p>
-        <p>
-            But for my first HCI real-world project, I'm proud of what I managed to accomplish. I hope my work benefits whoever takes over the project and its future users.
-            Meanwhile, I'll be carrying this experience into my Master's studies in HCI at the <span class="orgName">Georgia Institute of Technology</span> in Atlanta!
-        </p>
     </div>
-    </div>
-
 </body>
 <br>
 <br>
