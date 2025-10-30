@@ -313,3 +313,64 @@ li {
     font-size: 14px;
     line-height: 28px;;
 }
+
+#Footer {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 60px;
+    color: #cfcfcf;
+    background: transparent;
+}
+
+/* container aligns with header margins */
+.footerContainer {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0 60px 0; /* increased bottom padding so taskbar doesn't cover content */
+    font-size: 14px; /* make all footer text smaller */
+    font-family: 'Montserrat';
+}
+
+/* each column stacks its contents vertically */
+.footerLeft,
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* horizontally stack the links inside each section */
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* wrap to next line when viewport is narrow */
+}
+
+/* links styling */
+.footerLeft a,
+.footerNav a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footerLeft a:hover,
+.footerNav a:hover {
+    color: lightgray;
+}
+
+/* small screen fallback: stack links vertically */
+@media (max-width: 800px) {
+    .footerLinks {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footerContainer {
+        padding-bottom: 80px;
+    }
+}
