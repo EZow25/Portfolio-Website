@@ -214,22 +214,41 @@ h1 {
 
 .basicInfo {
     display: flex;
-    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
 }
 
-.summary {
-    width: 700px;
+.basicInfo > p {
+    font-size: 14px;
+    line-height: 28px;
 }
 
-.responsibilities {
-    width: 400px;
-    margin-left: 170px;
+.basicInfo .summary {
+    flex: 2 1 0;
+    min-width: 220px;
+}
+
+.basicInfo .responsibilities {
+    flex: 1 1 0;
+    min-width: 200px;
+}
+
+.basicInfo .impact {
+    flex: 1 1 0;
+    min-width: 200px;
+}
+
+@media (max-width: 900px) {
+    .basicInfo {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
 h2 {
     margin-top: 0px;
     margin-bottom: 5px;
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Montserrat'
 }
 
@@ -240,7 +259,7 @@ h3 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 28px;
 }
 
