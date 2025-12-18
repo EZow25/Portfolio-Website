@@ -336,7 +336,7 @@ ol li::before {
 
 .sectionGraphic {
     align-self: center;
-    width: 1350px;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
