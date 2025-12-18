@@ -423,6 +423,48 @@ li {
     color: lightgray;
 }
 
+/* mobile styles */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #Logo {
+        margin-left: 0;
+        height: 60px;
+    }
+
+    #Links {
+        position: static;
+        font-size: 14px;
+        gap: 15px;
+    }
+
+    .caseStudyContent {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sectionGraphic {
+        width: 100%;
+        max-width: 1350px;
+    }
+
+    .sectionImg {
+        width: 100%;
+        max-width: 1350px;
+    }
+
+    .footerContainer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 /* small screen fallback: stack links vertically */
 @media (max-width: 800px) {
     .footerLinks {
