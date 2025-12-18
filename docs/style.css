@@ -1,6 +1,7 @@
 html {
     background-color: black;
-    font-family: 'Open Sans';
+    font-family: 'Bahnschrift';
+    font-weight: 300;
     color: white;
 }
 
@@ -51,6 +52,7 @@ a:active {
 
 #Text {
     font-weight: bold;
+    font-family: 'Open Sans';
     font-size: 150px;
     margin-right: -300px;
     margin-top: 230px;
@@ -64,8 +66,8 @@ a:active {
 #Intro {
     z-index: 3;
     color: lightgray;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 16px;
+    font-weight: 200;
     width: 650px;
     line-height: 25px;
     margin-top: -10px;
@@ -122,6 +124,7 @@ a:active {
 }
 
 .projectTitle {
+    font-family:'Open Sans';
     font-size: 30px;
     font-weight: bold;
     margin-top: 0px;
@@ -140,6 +143,7 @@ a:active {
 }
 
 .projectOrg {
+    font-family: 'Open Sans';
     margin-top: 0px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -248,15 +252,18 @@ h1 {
 h2 {
     margin-top: 0px;
     margin-bottom: 5px;
-    font-size: 28px;
+    font-size: 16px;
     font-family: 'Montserrat';
+    font-weight: 800;
+    color: rgb(168, 168, 168);
+    text-transform: uppercase;
 }
 
 h3 {
     font-size:  22px;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Bahnschrift';
     font-weight: 600;
 }
 
@@ -268,6 +275,25 @@ p {
 }
 
 b {
+    font-weight: 600;
+}
+
+ol {
+    list-style: none;
+    counter-reset: num;
+    margin-bottom: -8px;
+}
+
+ol li {
+    counter-increment: num;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+ol li::before {
+    content: counter(num) ". ";
+    font-size: 22px;
     font-weight: 600;
 }
 
