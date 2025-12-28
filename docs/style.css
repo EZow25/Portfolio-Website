@@ -23,6 +23,7 @@ header {
     display: flex;
     gap: 60px;
     font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 a:link {
@@ -130,7 +131,7 @@ a:active {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 112px;
-    width: 300px;
+    width: 100%;
 }
 
 .projectHr {
@@ -191,6 +192,11 @@ a:active {
 
 .linkImg:hover {
     transform:scale(0.90);
+}
+
+.intextLink {
+    color: #fff089; /* #fff089 #9ac8ff */
+    text-decoration: underline;
 }
 
 .inTextLinkImg {
