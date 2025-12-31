@@ -72,6 +72,8 @@ a:active {
     width: 650px;
     line-height: 25px;
     margin-top: -10px;
+    font-family: 'Bahnschrift';
+
 }
 
 .orgName {
@@ -273,6 +275,15 @@ h3 {
     font-weight: 600;
 }
 
+.problemStatement {
+    font-size:  56px;
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 24px;
+}
+
 p {
     font-size: 16px;
     line-height: 28px;
@@ -310,6 +321,14 @@ ol li::before {
     flex-direction: column;
 }
 
+.statement {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .inlineImgs {
     display: flex;
     flex-direction: row;
@@ -331,6 +350,13 @@ ol li::before {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.sectionImgSm {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .sectionImgCover {
