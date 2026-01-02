@@ -105,7 +105,6 @@ a:active {
 
 #projectList {
     outline: none;
-    /* padding-top: 30px; */
 }
 
 #projectList:focus {
@@ -183,9 +182,55 @@ a:active {
     width: 100%;
 }
 
+/* Tabs styling (moved from inline) */
+.projectsSection .tabControls {
+    width: 942px;
+    margin: 0 auto 40px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+.projectsSection .tabButton {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px 0;
+    text-decoration: none;
+}
+.projectsSection .tabButton.active {
+    color: #fff089;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+.projectsTab {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.projectsTab .project {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    text-decoration: none;
+    color: inherit;
+}
+.projectsTab .project img.projectImg {
+    width: 537.7px;
+    height: auto;
+    border-radius: 6px;
+}
+@media (max-width:700px){
+    .projectsTab .project{flex-direction:column}
+    .projectsTab .project img.projectImg{width:100%}
+}
+
 .projectLinks {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: -8px;
+    margin-bottom: 12px;
 }
 
 .linkImg {
@@ -210,8 +255,8 @@ a:active {
     justify-content: center;
     flex-direction: column;
     margin-top: 0px;
-    padding-left: 240px;
-    padding-right: 240px;
+    padding-left: 120px;
+    padding-right: 120px;
     min-width: 60vw;
 }
 
@@ -295,6 +340,10 @@ b {
     font-weight: 600;
 }
 
+em {
+    color:#fff089;
+}
+
 ol {
     list-style: none;
     counter-reset: num;
@@ -316,7 +365,7 @@ ol li::before {
 
 .section {
     margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
 }

@@ -31,35 +31,91 @@
         </div>
         <img id="CoverImg" src="assets/cover.png" alt="Cover Image">
     </div>
-    <a href="retail.html" class="project" id="projectList">
-        <div>
-            <p class="projectTitle ">Birdie: AI-Powered Fashion Shopping</p>
-            <hr class="projectHr">
-            <p class="projectOrg">Georgia Institute of Technology &#x2022; 2025</p>
-            <div class="projectSkills"> 
-                UX/UI Research & Design
-            </div>
-            <p class="projectDescription">
-                Partnered with tech consultancy Slalom to research GenAI's impact on online shopping and design a GenAI-powered fashion shopping tool. 
-            </p>
+    <section id="projectList" class="projectsSection">
+        <div class="tabControls">
+            <button class="tabButton" data-tab="design" id="tabDesign">Design</button>
+            <button class="tabButton" data-tab="development" id="tabDev">Development</button>
         </div>
-        <img class="projectImg" src="assets/birdiehome.jpg" alt="Birdie Home Page" />
-    </a>
 
-    <a href="pipe-portal.html" class="project" id="projectList">
-       <div>
-            <p class="projectTitle ">Pipe Portal Redesign</p>
-            <hr class="projectHr">
-            <p class="projectOrg">Carnegie Mellon University &#x2022; 2025</p>
-            <div class="projectSkills"> 
-                UX/UI Research & Design, Web Development
-            </div>
-            <p class="projectDescription">
-                Redesigned the Pipe Portal experience to help business operators efficiently mark defects in crucial gas pipeline architecture.
-            </p>
+        <div class="projectsTab" data-tab="design">
+            <a href="retail.html" class="project">
+                <div>
+                    <p class="projectTitle ">Birdie: AI-Powered Fashion Shopping</p>
+                    <hr class="projectHr">
+                    <p class="projectOrg">Georgia Institute of Technology &#x2022; 2025</p>
+                    <div class="projectSkills"> 
+                        UX/UI Research & Design
+                    </div>
+                    <p class="projectDescription">
+                        Partnered with tech consultancy Slalom to research GenAI's impact on online shopping and design a GenAI-powered fashion shopping tool. 
+                    </p>
+                </div>
+                <img class="projectImg" src="assets/birdiehome.jpg" alt="Birdie Home Page" />
+            </a>
+
+            <a href="pipe-portal.html" class="project">
+               <div>
+                    <p class="projectTitle ">Pipe Portal Redesign</p>
+                    <hr class="projectHr">
+                    <p class="projectOrg">Carnegie Mellon University &#x2022; 2025</p>
+                    <div class="projectSkills"> 
+                        UX/UI Research & Design, Web Development
+                    </div>
+                    <p class="projectDescription">
+                        Redesigned the Pipe Portal experience to help business operators efficiently mark defects in crucial gas pipeline architecture.
+                    </p>
+                </div>
+                <img class="projectImg" src="assets/portalcover.png" alt="Pipe Portal Redesign" />
+            </a>
         </div>
-        <img class="projectImg" src="assets/portalcover.png" alt="Pipe Portal Redesign" />
-    </a>
+
+        <div class="projectsTab" data-tab="development" style="display:none;">
+            <a href="pipe-portal.html" class="project">
+               <div>
+                    <p class="projectTitle ">Pipe Portal Redesign</p>
+                    <hr class="projectHr">
+                    <p class="projectOrg">Carnegie Mellon University &#x2022; 2025</p>
+                    <div class="projectSkills"> 
+                        UX/UI Research & Design, Web Development
+                    </div>
+                    <p class="projectDescription">
+                        Redesigned the Pipe Portal experience to help business operators efficiently mark defects in crucial gas pipeline architecture.
+                    </p>
+                </div>
+                <img class="projectImg" src="assets/portalcover.png" alt="Pipe Portal Redesign" />
+            </a>
+
+            <a href="ecmo.html" class="project">
+               <div>
+                    <p class="projectTitle ">ECMO Dashboard</p>
+                    <hr class="projectHr">
+                    <p class="projectOrg">Carnegie Mellon University &#x2022; 2024</p>
+                    <div class="projectSkills"> 
+                        UI/UX Design, Web Development, Data Visualization
+                    </div>
+                    <p class="projectDescription">
+                        Supported medical device engineers and researchers by providing a visual of real-time patient data.
+                    </p>
+                </div>
+                <img class="projectImg" src="assets/ecmo.png" alt="ECMO Dashboard">
+            </a>
+
+            <a href="viz.html" class="project">
+                <div>
+                     <p class="projectTitle">3D Pipe Visualization</p>
+                     <hr class="projectHr">
+                     <p class="projectOrg">Carnegie Mellon University &#x2022; 2023</p>
+                     <div class="projectSkills"> 
+                        Software Development
+                    </div>
+                    <p class="projectDescription">
+                        Developed a tool for engineers to generate 3D models of pipe systems for a robot to inspect and repair.
+                    </p>
+                 </div>
+                 <img class="projectImg" src="assets/viz.png" alt="Viz">
+            </a>
+        </div>
+    </section>
 
     <footer id="Footer">
         <div class="footerContainer">
@@ -81,6 +137,49 @@
             </div>
         </div>
     </footer>
+        <script>
+        (function(){
+            const DEFAULT = 'design'; // default tab is the design tab
+            
+            // parse the current tab from the URL hash
+            function fromHash(){
+                const h = (location.hash || '').replace('#', '').toLowerCase();
+                if(!h) return null;
+                if(h === 'development') return 'development';
+                if(h === 'design') return 'design';
+                return null;
+            }
+
+            // change to the tab defined by the tab parameter
+            // replace is a boolean that determines whether the URL change creates a new browser history entry
+            function setActive(tab, replace){
+                tab = tab || DEFAULT;
+                document.querySelectorAll('.tabButton').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+                document.querySelectorAll('.projectsTab').forEach(p=>{ p.style.display = (p.dataset.tab === tab) ? 'flex' : 'none'; });
+                const newHash = '#' + tab;
+                if(replace) history.replaceState(null, '', newHash); else location.hash = tab;
+            }
+
+            // init
+            const initial = fromHash() || DEFAULT;
+            // ensure a visible state without adding history entry
+            setActive(initial, true);
+
+            // add event listeners to the tab buttons
+            document.querySelectorAll('.tabButton').forEach(btn=>{
+                btn.addEventListener('click', ()=>{
+                    const t = btn.dataset.tab;
+                    setActive(t, false);
+                });
+            });
+
+            // update the UI when hash changes because of something other than button press (i.e back button, bookmark, etc.)
+            window.addEventListener('hashchange', ()=>{
+                const t = fromHash() || DEFAULT;
+                setActive(t, true);
+            });
+        })();
+        </script>
 </body>
 
 </html>
