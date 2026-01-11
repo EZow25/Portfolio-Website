@@ -211,19 +211,8 @@ a:active {
     flex-direction: column;
     gap: 18px;
 }
-.projectsTab .project {
-    display: flex;
-    gap: 20px;
-    align-items: stretch;
-    text-decoration: none;
-    color: inherit;
-}
-.projectsTab .project img.projectImg {
-    width: 537.7px;
-    height: auto;
-    border-radius: 6px;
-}
-@media (max-width:700px){
+
+@media (max-width:900px){
     .projectsTab .project{flex-direction:column}
     .projectsTab .project img.projectImg{width:100%}
 }
@@ -252,12 +241,24 @@ a:active {
 
 .caseStudyContent {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     margin-top: 0px;
     padding-left: 120px;
     padding-right: 120px;
     min-width: 60vw;
+}
+
+@media (max-width: 900px) {
+    .castStudyContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+        padding-left: 120px;
+        padding-right: 120px;
+        min-width: 60vw;
+    }
 }
 
 h1 {
@@ -308,7 +309,7 @@ h2 {
     font-size: 16px;
     font-family: 'Montserrat';
     font-weight: 800;
-    color: rgb(168, 168, 168);
+    color: rgb(201, 201, 201);
     text-transform: uppercase;
 }
 
@@ -316,6 +317,14 @@ h3 {
     font-size:  22px;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+}
+
+h4 {
+    margin-top: 24px;
+    margin-bottom: 4px;
+    font-size:  22px;
     font-family: 'Bahnschrift';
     font-weight: 600;
 }
@@ -363,6 +372,14 @@ ol li::before {
     font-weight: 600;
 }
 
+ul {
+    margin-top: 4px;
+}
+
+ul li {
+    font-size: 16px;
+}
+
 .section {
     margin-top: 0px;
     margin-bottom: 80px;
@@ -378,6 +395,37 @@ ol li::before {
     width: 100%;
 }
 
+.methodsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 56px;
+}
+
+.method {
+    position: relative;
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(#5c7799, black);
+    padding: 32px 24px 32px 24px;
+    border-radius: 30px;
+}
+
+.methodIcon {
+    position: relative;
+    width: 320px;
+    top: 70%;
+    bottom: 30%;
+}
+
+.description {
+    width: 60%;
+    margin-right: 24px;  
+}
+
 .inlineImgs {
     display: flex;
     flex-direction: row;
@@ -387,18 +435,38 @@ ol li::before {
     margin-bottom: 0px;
 }
 
+@media (max-width: 900px) {
+    .sectionImg {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .sectionImgLg {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .sectionImgSm {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+}
+
 .sectionImg {
     width: 800px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 .sectionImgLg {
     width: 1200px;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .sectionImgSm {
@@ -505,7 +573,7 @@ li {
 }
 
 /* mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -526,6 +594,9 @@ li {
     }
 
     .caseStudyContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -544,10 +615,12 @@ li {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    
 }
 
 /* small screen fallback: stack links vertically */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .footerLinks {
         flex-direction: column;
         gap: 8px;
